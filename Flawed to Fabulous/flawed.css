@@ -1,0 +1,88 @@
+ul {text-decoration: none;
+	 background-color: #E0ffff;
+	 background-size: auto;
+	 float: left;
+	 padding: 20px;
+ }
+ li { font-family:Verdana, Arial, sans-serif;
+	text-decoration: none;
+	padding: 5px;
+	}
+body {font-family:Verdana, Arial, sans-serif;
+      background-color: #E0FFFF;
+	  color: #ff0000;
+}
+#wrapper { width: 80%;
+		   margin: none;
+           min-width: 800px;
+		   max-width: 1200px;
+} 
+nav { float: left;
+	  width: 150px;
+} 
+#rightcol { margin-left: 155px;
+        background-color: #e0ffff;
+        color: #ff000;
+} 
+header{ background-color: #e0ffff;
+        color: #00005D; 
+        font-size: 100%; 
+}
+h2 { color: #ff0000;
+     font-family: arial, sans-serif;
+	 position: relative;
+	 text-align: center;
+}
+main { display: block; /* for Internet Explorer version 10 and below */
+       padding: 20px 20px 0 20px;
+} 
+float {float: left;
+		width: 100px;
+        margin: 10px;
+}
+#aside { float: right; }
+
+.items { float: right;
+	 display: block;
+	 margin-left: 50px;
+ }
+.clearleft { clear: left}
+footer {font-size:70%;
+         text-align: center;
+		 clear: right;
+         padding-bottom: 20px;
+}	
+nav ul { list-style-type: none;
+}
+nav a {text-decoration: none;
+}
+nav a:link { color: #ff0000; }
+nav a:visited { color: #ff0000; }
+nav a:hover { color: #ff0000; }
+
+@media only screen and (max-width: 1024px) {
+            body { margin: 0; padding: 0; } 
+            #wrapper { width: auto; margin: 0; }
+		    h1 { font-size: 200%; }
+			#demo { -webkit-flex-direction: column;
+                    flex-direction: column;
+            }
+nav ul { display: -webkit-flex;
+                     display: flex;
+                     -webkit-flex-direction: row;
+                     flex-direction: row;
+				     -webkit-justify-content: center;
+                     justify-content: center; 
+			}
+nav li { padding: 0 0.5em; 
+				     font-size: 1.2em;
+			}
+			
+}		
+@media only screen and (max-width: 768px) {
+         	nav { -webkit-order: 1;
+                   order: 1;   }
+		   nav ul { -webkit-flex-wrap: wrap;
+	                flex-wrap: wrap; }
+}
+header, main, nav, footer, figure { display: block; }
